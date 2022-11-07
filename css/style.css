@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Vollkorn:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/tulips.jpg");
+    background-size: cover;
+}
+
+.font-Baloo-Thambi-2 {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.banner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(34, 6, 44);
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+.kiri {
+    background-image: url("img/rose-book-kiri.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kanan {
+    background-image: url("img/rose-book-kanan.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kiri, .kanan {
+    height: 350px;
+    width: 48%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project a {
+    text-decoration: none; 
+    font-size: 36px;
+    font-family: 'Vollkorn', serif;
+    color: rgb(12, 11, 26);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.089); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project a:hover {
+    filter: none;
+    background: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .kiri, .kanan {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .container {
+        padding: 0 10px;
+    }
+}

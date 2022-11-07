@@ -1,77 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Table and Form</title>
-            <style>
-            table {font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; width: 50%}
-            td, th{border: 1px solid black; padding: 1px}
-            </style>
-    </head>
-    <body>
-        <!--Tabel-->
-        <div>
-            <h1>対戦結果</h1>
-            <h2>第73回JABA九州大会</h2>
-            <p>2021年5月9日(日) 9:00</p>
-            <p>試合会場：オーヴィジョンスタジアム下関</p>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body id="tb-form">
+    <div class="container">
+        <!--Table-->
+        <div class="tables">
+            <div>
+                <h2>対戦結果</h2>
+                <h2>第73回JABA九州大会</h2>
+                <p>2021年5月9日(日) 9:00</p>
+                <p>試合会場：オーヴィジョンスタジアム下関</p>
+            </div>
         </div>
-        <div>
+        <div class="first-table">
             <table>
                 <tr>
-                    <th style="text-align:left;" style="width:90px;">チーム名</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>計</th>
+                    <div>
+                        <th>チーム名</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>計</th>
+                    </div> 
                 </tr>
                 <tr>
-                    <td style="width:90px;">パナソニック</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">1</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">3</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">3</td>
-                    <td style="text-align:center;">7</td>
+                    <div>
+                        <td>パナソニック</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </div>
                 </tr>
                 <tr>
-                    <td style="width:90px;">Honda熊本</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">1</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">0</td>
-                    <td style="text-align:center;">1</td>
+                    <div>
+                        <td>Honda熊本</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </div>   
                 </tr>
             </table>
+            <br>
         </div>
-        <div>
-            <p>   </p>
-        </div>
-        <div>
+        <div class="second-table">
             <table>
                 <tr>
-                    <th rowspan="2" style="width:70px;">バッテリー</th>
-                    <th colspan="5">Honda熊本</th>
-                    <th colspan="5">パナソニック</th>
+                    <div>
+                        <th rowspan="2">バッテリー</th>
+                        <th colspan="5" style="width: 40%;">Honda熊本</th>
+                        <th colspan="5" style="width: 40%;">パナソニック</th>
+                    </div>
                 </tr>
-                <tr>
+                <tr>                 
                     <td colspan="5">
                         <p>投手：島袋、福田、横川、内田、高山、中津</p>
                         <p>捕手：竹葉</p>
@@ -83,27 +95,27 @@
                 </tr>
             </table>
         </div>
+    </div>
 
-        <!--Form-->
-        <div>
-            <h1>お問い合わせ</h1>            
-        </div>
+    <!--Form-->
+    <div class="form">
+        <h2>お問い合わせ</h2>            
         <form action="/action_page.php" method="get">
             <div>
                 <label for="name">お名前 [必須]:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name"><br>
             </div> 
             <div>
                 <label for="email">メールアドレス [必須]:</label>
-                <input type="text" id="email" name="email"><br><br>
+                <input type="text" id="email" name="email"><br>
             </div> 
             <div>
-                <label for="number phone">電話番号[任意]:</label>
-                <input type="text" id="number phone" name="number phone"><br><br>
+                <label for="number-phone">電話番号[任意]:</label>
+                <input type="text" id="number-phone" name="number-phone"><br>
             </div> 
             <div>
                 <label for="select">ご用件 [必須]:</label>
-                <select name="select" id="select">
+                <select id="select" name="select">
                     <option value="-" disabled selected hidden>選択してください</option>
                     <option value="1">書籍についてのご質問(個人のお客様)</option>
                     <option value="2">書籍についてのご質問(取次・書店様)</option>
@@ -115,13 +127,13 @@
                 </select>
             </div>
             <div>
-                <p>お問い合わせ内容 [必須]:</p>               
-                <textarea name="form" rows="10" cols="40"></textarea>
+                <br>
+                <label for="isi">お問い合わせ内容 [必須]:</label>               
+                <textarea name="isi" rows="10" cols="40"></textarea>
             </div>
-            <div>
-                <input type="submit" value="確認">
-            </div>       
+            <button type="submit">確認</button>
         </form>
-        
-    </body>
+    </div>        
+</body>
+
 </html>
