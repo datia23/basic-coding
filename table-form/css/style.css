@@ -1,5 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=M+PLUS+1&family=Vollkorn:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Hina+Mincho&family=Kaisei+HarunoUmi:wght@500&family=M+PLUS+1&family=Mochiy+Pop+One&family=Rampart+One&family=Shippori+Antique+B1&family=Vollkorn:wght@900&family=Yomogi&display=swap');
 
 body {
     background-color: lightblue;
+}
+
+#tb-form {
+    background-image: linear-gradient(to bottom right, #ebe4fc, #5b86ff);
+    padding: 15px 0;
+}
+
+#tb-form .container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px; width: 70%;
+    margin: auto;
+}
+
+.tables {
+    border-bottom: solid 5px #d1d4f8b6;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.tables h1, h2, p {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.tables table {
+    width: 100%;
+    border: solid 1px #082a47;
+    table-layout: auto;
+    border-collapse: collapse;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.first-table table th {
+    background-color: #d1d4f8;
+}
+
+.second-table table th {
+    background-color: #d1d4f8;
+}
+
+.tables table th, .tables table td {
+    border: solid 1px #0b2f4e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form h2 {
+    text-align: center;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+.form label {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 14px;
+}
+
+.form input, .form select {
+    width: 100%;
+    display: block;
+    background-color: #d1d4f87a;
+    border-style: double;
+    padding: 10px;
+}
+
+.form option {
+    font-family: 'Shippori Antique B1', sans-serif;
+    
+}
+.form textarea {
+    width: 100%;
+    display: block;
+    background-color: #d1d4f87a;
+    border-style: double;
+    padding: 10px;
+}
+
+.form button {
+    width: 50%;
+    background-color: #8f98fc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.form button:hover {
+    background-color: #666ec5;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 0 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .familia-list li{
+        width: 100%;
+    }
 }
