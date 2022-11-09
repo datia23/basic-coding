@@ -50,8 +50,8 @@ body {
 }
 
 form {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ form {
     display: block;
     margin-top: 15px;
     font-family: 'Mochiy Pop One', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .form input, .form select {
@@ -73,13 +73,13 @@ form {
     display: block;
     background-color: #d1d4f87a;
     border: none;
-    padding: 10px;
+    padding: 12px;
 }
 
-.form option {
+.form input, .form option, .form textarea {
     font-family: 'Shippori Antique B1', sans-serif;
-    
 }
+
 .form textarea {
     width: 100%;
     display: block;
@@ -89,20 +89,18 @@ form {
 }
 
 .form button {
-    width: 50%;
+    width: 100%;
     background-color: #8f98fc;
     color: #fff;
     padding: 10px;
     border: none;
     cursor: pointer;
     margin-top: 20px;
-    margin-left: 30%;
-    margin-right: 20%;
     font-family: 'Shippori Antique B1', sans-serif;
 }
 
 .form button:hover {
-    background-color: #666ec5;
+    background-color: #5259ac;
 }
 
 @media only screen and (max-width: 900px) {

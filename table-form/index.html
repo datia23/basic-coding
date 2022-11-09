@@ -37,7 +37,7 @@
                     </tr>
                     <tr>
                         <div>
-                            <td>パナソニック</td>
+                            <th>パナソニック</th>
                             <td>0</td>
                             <td>0</td>
                             <td>0</td>
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <div>
-                            <td>Honda熊本</td>
+                            <th>Honda熊本</th>
                             <td>0</td>
                             <td>1</td>
                             <td>0</td>
@@ -94,39 +94,39 @@
         <!--Form-->
         <div class="form">
             <h2>お問い合わせ</h2>            
-                <form action="/action_page.php" method="get">
-                <div>
-                    <label for="name">お名前 [必須]:</label>
-                    <input type="text" id="name" name="name"><br>
-                </div> 
-                <div>
-                    <label for="email">メールアドレス [必須]:</label>
-                    <input type="text" id="email" name="email"><br>
-                </div> 
-                <div>
-                    <label for="number-phone">電話番号[任意]:</label>
-                    <input type="text" id="number-phone" name="number-phone"><br>
-                </div> 
-                <div>
-                    <label for="select">ご用件 [必須]:</label>
-                    <select id="select" name="select">
-                        <option value="-" disabled selected hidden>選択してください</option>
-                        <option value="1">書籍についてのご質問(個人のお客様)</option>
-                        <option value="2">書籍についてのご質問(取次・書店様)</option>
-                        <option value="3">書籍についてのご質問(メディア関係者様)</option>
-                        <option value="4">アルバイト・パートに関するお問い合わせ</option>
-                        <option value="5">仕事のご依頼・お問い合わせ</option>
-                        <option value="6">外部スタッフのご希望(フリーの方、制作会社様)</option>
-                        <option value="7">その他のお問合せ</option>
-                    </select>
-                </div>
-                <div>
-                    <br>
-                    <label for="isi">お問い合わせ内容 [必須]:</label>               
-                    <textarea name="isi" rows="10" cols="40"></textarea>
-                </div>
-                <button type="submit">確認</button>
-            </form>
+                <form>
+                    <div>
+                        <label for="name">お名前 [必須]:</label>
+                        <input type="text" id="name" name="name"><br>
+                    </div> 
+                    <div>
+                        <label for="email">メールアドレス [必須]:</label>
+                        <input type="text" id="email" name="email"><br>
+                    </div> 
+                    <div>
+                        <label for="number">電話番号[任意]:</label>
+                        <input type="text" id="number" name="number"><br>
+                    </div> 
+                    <div>
+                        <label for="pilh">ご用件 [必須]:</label>
+                        <select id="pilih" name="pilih">
+                            <option value="" disable selected hidden>選択してください</option>
+                            <option value="1">書籍についてのご質問(個人のお客様)</option>
+                            <option value="2">書籍についてのご質問(取次・書店様)</option>
+                            <option value="3">書籍についてのご質問(メディア関係者様)</option>
+                            <option value="4">アルバイト・パートに関するお問い合わせ</option>
+                            <option value="5">仕事のご依頼・お問い合わせ</option>
+                            <option value="6">外部スタッフのご希望(フリーの方、制作会社様)</option>
+                            <option value="7">その他のお問合せ</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="isi">お問い合わせ内容 [必須]:</label>               
+                        <textarea name="isi" rows="10" cols="40"></textarea>
+                    </div>
+                    <button type="submit">確認</button>
+                </form>
         </div>
     </div>        
 </body>

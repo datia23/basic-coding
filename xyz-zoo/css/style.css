@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Hina+Mincho&family=Kaisei+HarunoUmi:wght@500&family=M+PLUS+1&family=Mochiy+Pop+One&family=Rampart+One&family=Shippori+Antique+B1&family=Vollkorn:wght@900&family=Yomogi&display=swap');
+
+#zoo {
+    background: rgba(163, 214, 184, 0.918);
+}
+
+#zoo .banner {
+    background: url(../img/zoo.jpg) center no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#zoo .banner h1 {
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    font-size: 72px;
+
+}
+
+#zoo .banner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(129, 75, 75, 0.425)
+}
+
+.animal-list > li {
+    background: rgba(252, 208, 208, 0.651);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    padding: 25px 15px;
+}
+
+.animal-list > li h2 {
+    width: 100%;
+}
+
+.familia-list > li {
+    width: 49%;
+    list-style: square;
+}
+
+.familia-list img {
+    display: block;
+    width: 100%;
+}
+
+.source {
+    background: #a6a7f1;
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+.source ol {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.source ol li{
+    margin-right: 40px;    
+    color: #fff;
+}
+
+.source ol li a {
+    color: #fff;
+    text-decoration: none;
+}
