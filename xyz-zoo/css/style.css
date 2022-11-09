@@ -77,4 +77,21 @@
 .source ol li a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Yomogi', cursive;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 0 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .familia-list li{
+        width: 100%;
+    }
 }
